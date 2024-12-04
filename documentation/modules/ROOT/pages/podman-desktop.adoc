@@ -19,7 +19,7 @@ image::podman-desktop.png[alt="Podman Desktop Container Info tab", align="center
 
 == Image Management
 
-Podman Desktop allows you to pull images from Docker Hub, Quay.io, and other registries. You can also build images from a Dockerfile or Containerfile. For this example, let's pull the `nginx:latest` image from Docker Hub. In the *Images* tab, click the *Pull an image* button and enter `nginx` in the *Image to Pull* field. Click *Pull image* to start the pull process. The default registry is Docker Hub, but you can  add other registries with authentication by selecting *Manage registries*.
+Podman Desktop allows you to pull images from Docker Hub, Quay.io, and other registries. You can also build images from a Dockerfile or Containerfile. For this example, let's pull the `quay.io/rhpds/nginx` image from Docker Hub. In the *Images* tab, click the *Pull an image* button and enter `quay.io/rhpds/nginx` in the *Image to Pull* field. Click *Pull image* to start the pull process. The default registry is Quay.io, but you can  add other registries with authentication by selecting *Manage registries*.
 
 image::podman-desktop-pull.png[alt="Podman Desktop Container Info tab", align="center"]
 

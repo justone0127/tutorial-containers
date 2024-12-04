@@ -17,7 +17,7 @@ Your terminal prompt should by now look like this:
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-[jboss@24543489a4b1 ~]$
+[default@3cef96df8faa ~]$
 ----
 
 What you can do is directly related to what you installed inside your container, but a `curl` works in general:
@@ -42,14 +42,6 @@ We can also print the VM settings of this container:
 [source,bash,subs="+macros,+attributes"]
 ----
 java -XshowSettings:vm -version
-----
-
-See Maven's installed version:
-
-[.console-input]
-[source,bash,subs="+macros,+attributes"]
-----
-mvn -v
 ----
 
 And even check the OS version details:
