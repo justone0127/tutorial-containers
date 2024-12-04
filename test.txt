@@ -1,0 +1,23 @@
+# Set some variables
+tenantID="64dc69e4-d083-49fc-9569-ebece1dd1408"
+subID="8e15b613-d1f9-41a6-a23d-e8b3ce94d6fe"
+sourceImageID="/subscriptions/9bc65489-e2db-4241-ab92-a1ad8bf25fd3/resourceGroups/openenv-hpnwt/providers/Microsoft.Compute/galleries/kako_acg/images/win-kako-01/versions/0.0.1"
+
+# Login to the subscription where the new image will be created
+az login
+
+# Log in to the tenant where the source image is available
+az login --tenant $tenantID
+
+# Log back in to the subscription where the image will be created and ensure subscription context is set
+az login
+az account set --subscription $subID
+
+# Create the image
+az sig image-version create `
+   --gallery-image-definition win-kako-01 `
+   --gallery-image-version 0.0.1 `
+   --gallery-name kako_acg `
+   --resource-group openenv-8zjvn `
+   --image-version "/subscriptions/9bc65489-e2db-4241-ab92-a1ad8bf25fd3/resourceGroups/openenv-hpnwt/providers/Microsoft.Compute/galleries/kako_acg/images/win-kako-01/versions/0.0.1" `
+   --location "East Asia"

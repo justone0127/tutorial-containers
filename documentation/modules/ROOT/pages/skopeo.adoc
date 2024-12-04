@@ -1,7 +1,7 @@
 = Skopeo
 
 https://github.com/containers/skopeo[Skopeo] is a command line utility that performs operations on container images and image repositories.
-One of the big advantages of Skopeo is not requiring docker installed, it works with no Docker host, or requiring `root` permissions.
+One of the big advantages of Skopeo is not requiring podman installed, it works with no Docker host, or requiring `root` permissions.
 
 The operations you can do with Skopeo are:
 
@@ -184,12 +184,12 @@ Storing signatures
 ----
 
 Now, instead of using `dir` in the destination part, we use the `docker-daemon` destination to set the local registry.
-If you run the `docker images` command, you'll see the image downloaded with the `skopeo` tag:
+If you run the `podman images` command, you'll see the image downloaded with the `skopeo` tag:
 
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-docker images
+podman images
 ----
 
 [.console-output]
@@ -208,7 +208,7 @@ Run the following command in a terminal window:
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-docker run --rm -ti -p 5000:5000 --restart=always --name registry registry:2
+podman run --rm -ti -p 5000:5000 --restart=always --name registry registry:2
 ----
 
 In a new terminal window, run the `copy` command setting origin to quay.io and the destination, the registry created in the previous step:
@@ -244,7 +244,7 @@ time="2023-04-12T13:29:37.927391556Z" level=info msg="response completed" go.ver
 172.17.0.1 - - [12/Apr/2023:13:29:37 +0000] "PUT /v2/rhdevelopers/quarkus-demo/manifests/skopeo HTTP/1.1" 201 0 "" "skopeo/1.11.1"
 ----
 
-Shut down the container registry by stopping the `docker run` process.
+Shut down the container registry by stopping the `podman run` process.
 
 == Deleting a Container
 
