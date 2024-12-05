@@ -1,7 +1,6 @@
-name: containers-tutorial
-title: Containers Tutorial
-version: master
+name: mad-dev-guides-m1
+title: Module 1 - Container
+version: main
 nav:
   - modules/ROOT/nav.adoc
-
-start_page: ROOT:index.adoc
+start_page: ROOT:1-introduction.adoc
