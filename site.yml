@@ -3,7 +3,7 @@ runtime:
 
 site:
   title: DevNation Container Deep Dive
-  start_page: containers-tutorial::index.adoc
+  start_page: mad-dev-guides-m1::index.adoc
 
 content:
   sources:
