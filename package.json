@@ -1,11 +1,11 @@
 {
-  "name": "rhd-containers-mastercourse",
-  "description": "Containers Master Course",
-  "homepage": "https://redhat-scholars.github.io/containers-tutorial",
+  "name": "mad-dev-guides-m1",
+  "description": "Modern Application Development Dev Track - Module 1",
+  "homepage": "https://github.com/RedHat-Middleware-Workshops/mad-dev-guides-m1.git",
   "author": {
-    "email": "emoraes@redhat.com",
-    "name": "Elder Moraes",
-    "url": "https://twitter.com/elderjava"
+    "email": "doh@redhat.com",
+    "name": "Daniel Oh",
+    "url": "https://twitter.com/@danieloh30"
   },
   "dependencies": {
     "@antora/cli": "^2.3.1",
@@ -17,7 +17,7 @@
     "@babel/register": "^7.5.5",
     "browser-sync": "^2.26.7",
     "fs-extra": "^8.1.0",
-    "gulp": "^4.0.2",
+    "gulp": "^4.0.0",
     "yaml-js": "^0.2.3"
   },
   "devDependencies": {},
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redhat-scholars/containers-tutorial.git"
+    "url": "git+https://https://github.com/RedHat-Middleware-Workshops/mad-dev-guides-m1.git"
   },
   "license": "Apache-2.0",
   "babel": {
