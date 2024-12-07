@@ -62,7 +62,7 @@ Podman Desktop으로 OpenShift에 Pod를 배포하려면, CMD 터미널에서 `o
 [.console-input]
 [source,bash,subs="+macros,attributes+"]
 ----
-oc login -u %userid% -p openshift https://api.cluster-4kkjm.4kkjm.sandbox2562.opentlc.com:6443
+oc login -u %userid% -p openshift https://api.cluster-vgrd5.vgrd5.sandbox557.opentlc.com:6443
 ----
 
 그리고 이 단계에서는 OpenShift의 cicd-%userid% 프로젝트에 배포하겠습니다.
