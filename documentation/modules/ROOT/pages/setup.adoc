@@ -1,12 +1,12 @@
 [[requirements]]
-= Setup
+= 환경 설정
 include::_attributes.adoc[]
 
-== Required Tools
+== 필요한 도구
 
-The following tools are required for running the exercises in this tutorial. You'll need to have them installed and configured before you get started with any of the tutorial chapters.
+이 튜토리얼의 연습을 실행하려면 다음 도구가 필요합니다. 튜토리얼 장을 시작하기 전에 설치하고 구성해야 합니다.
 
-TIP: By default, the commands in this tutorial are using Docker, but you use `podman` instead of `docker` throughout the tutorial's instructions, or `alias docker=podman`. The advantage of Podman is that it is 100% Free Open Source and does not need to run with elevated privileges.
+TIP: 이 도구들은 이미 제공된 Windows 가상 머신에 구성되어 있습니다. 참고 사항으로 확인만 해두시기 바랍니다.
 
 [options="header"]
 |===
@@ -21,12 +21,12 @@ TIP: By default, the commands in this tutorial are using Docker, but you use `po
 | **Java 21 (or 17)**
 | https://adoptium.net/installation/
 | https://adoptium.net/installation/
-| https://adoptium.net/installation/ (Make sure you set the `JAVA_HOME` environment variable and add `%JAVA_HOME%\bin` to your `PATH`)
+| https://adoptium.net/installation/ (`JAVA_HOME` 환경 변수를 확인하시고 `%JAVA_HOME%\bin` 경로가 `PATH` 환경 변수에 있어야 합니다.)
 
 | **Apache Maven 3.6.2+**
 | `brew install maven`
 | `dnf install maven`
-| https://maven.apache.org/download.cgi[Windows] (Make sure you set the `MAVEN_HOME` environment variable and add `%MAVEN_HOME%\bin` to your `PATH`)
+| https://maven.apache.org/download.cgi[Windows] (`MAVEN_HOME` 환경 변수를 구성해야 하며, `%MAVEN_HOME%\bin` 경로가 `PATH` 환경 변수에 있어야 합니다.)
 
 
 |===
