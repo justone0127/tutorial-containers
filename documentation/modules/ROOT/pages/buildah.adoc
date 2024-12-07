@@ -13,7 +13,7 @@ TIP: Buildah는 도커리스 기술이므로 컨테이너 이미지를 빌드하
 
 == 컨테이너 이미지 생성
 
-`vi Containerfile` 명령어로 `Containerfile`을 만들고 아래의 내용을 입력합니다.
+`vi Containerfile` 명령어로 *Containerfile* 을 만들고 아래의 내용을 입력합니다.
 
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
@@ -84,7 +84,7 @@ docker.io/library/alpine              3.17.3      9ed4aefc74f6  2 weeks ago    7
 buildah push --tls-verify=false --creds=username:password quay.io/lordofthejars/hello:latest quay.io/lordofthejars/hello:latest
 ----
 
-quay.io에 엑세스하기 위해 `--creds` 인수로 사용자 계정과 비밀번호를 설정합니다. 
+quay.io 에 엑세스하기 위해 `--creds` 인수로 사용자 계정과 비밀번호를 설정합니다. 
 기본적으로 `buildah` 에서는 `~/.docker/config.json` 자격증명을 읽지만, 이것은 새로운 컨테이너이므로 자격 증명을 제공해야 합니다.
 
 [.console-output]

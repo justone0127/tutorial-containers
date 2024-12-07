@@ -20,7 +20,7 @@ podman exec -it my-container /bin/bash
 [default@3cef96df8faa ~]$
 ----
 
-`curl`과 같이 컨테이너 내부에 명령어가 설치되어 있으면, 컨테이너 내부에서 실행이 가능합니다.
+`curl` 과 같이 컨테이너 내부에 명령어가 설치되어 있으면, 컨테이너 내부에서 실행이 가능합니다.
 
 [.console-input]
 [source,bash,subs="+macros,+attributes"]

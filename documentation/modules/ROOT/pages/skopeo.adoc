@@ -217,7 +217,7 @@ podman run -ti -p 5000:5000 --restart=always --name registry registry:2
 ----
 
 새로운 터미널 창을 열고 `wsl` 명령어를 실행하여 wsl 환경으로 들어갑니다.
-다음처럼 `skopeo copy` 명령을 실행할 때, origin을 quay.io로 설정하고 destination은 위 단계에서 만든 레지스트리로 설정합니다.
+다음처럼 `skopeo copy` 명령을 실행할 때, origin을 *quay.io* 로 설정하고 destination은 위 단계에서 만든 레지스트리로 설정합니다.
 
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
@@ -250,7 +250,7 @@ time="2023-04-12T13:29:37.927391556Z" level=info msg="response completed" go.ver
 172.17.0.1 - - [12/Apr/2023:13:29:37 +0000] "PUT /v2/rhdevelopers/quarkus-demo/manifests/skopeo HTTP/1.1" 201 0 "" "skopeo/1.11.1"
 ----
 
-`podman run` 프로세스를 중지하여 컨테이너 레지스트리를 종료합니다.
+`podman run` 프로세스를 중지하여 로컬에 기동 중인 컨테이너 레지스트리를 종료합니다.
 
 == 컨테이너 삭제 (옵션)
 
