@@ -54,7 +54,28 @@ image::podman-desktop-nginx.png[alt="Podman Desktop running nginx", align="cente
 == Pod 생성
 
 Podman을 사용하면 OpenShift와 같은 Kubernetes 클러스터에 동일한 네트워크와 스토리지를 공유하는 컨테이너 그룹인 Pod를 만들 수도 있습니다.
-이는 데이터베이스와 웹 서버를 같이 실행해야 하는 여러 컨테이너로 구성된 애플리케이션에 유용합니다. Pod를 만들려면 `Pods` 탭 에서 `Play Kubernetes YAML` 버튼을 클릭합니다. 그러면 Kubernetes YAML을 선택하고 Podman 또는 Kubernetes 클러스터에 적용할 수 있는 대화 상자가 나타납니다. 
+
+[IMPORTANT]
+======
+Podman Desktop으로 OpenShift에 Pod를 배포하려면, CMD 터미널에서 `oc login` 명령어로 OpenShift에 로그인이 필요합니다.
+
+[.console-input]
+[source,bash,subs="+macros,attributes+"]
+----
+oc login -u %userid% -p openshift https://api.cluster-4kkjm.4kkjm.sandbox2562.opentlc.com:6443
+----
+
+그리고 이 단계에서는 OpenShift의 cicd-%userid% 프로젝트에 배포하겠습니다.
+
+[.console-input]
+[source,bash,subs="+macros,attributes+"]
+----
+oc project cicd-%userid%
+----
+======
+
+
+`Pod` 는 데이터베이스와 웹 서버를 같이 실행해야 하는 여러 컨테이너로 구성된 애플리케이션에 유용합니다. Pod를 만들려면 `Pods` 탭 에서 `Play Kubernetes YAML` 버튼을 클릭합니다. 그러면 Kubernetes YAML을 선택하고 Podman 또는 Kubernetes 클러스터에 적용할 수 있는 대화 상자가 나타납니다. 
 이 예에서는 다음 내용이 있는 `podman-desktop-pod.yaml` 파일을 만듭니다. 
 
 TIP: yaml 파일을 생성하기 위해 VSCode 또는 메모장과 같은 편집기 도구를 활용합니다.
