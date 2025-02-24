@@ -31,11 +31,8 @@ TIP: 이 도구들은 이미 제공된 REHL9 가상 머신에 구성되어 있�
 
 |===
 
---
-= 실습 환경 확인
-include::_attributes.adoc[]
 
-== RHEL 9 
-이 환경에는 실습에 필요한 Podman Desktop, Visual Studio, Apache Maven, OpenJDK가 사전 구성되어 있으며, 웹 브라우저를 통해 실습 환경에 접속 하실 수 있습니다.
+= 실습 환경 확인
+---
 
 
