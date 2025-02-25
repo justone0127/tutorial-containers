@@ -14,7 +14,7 @@ Skopeo로 할 수 있는 작업은 다음과 같습니다.
 
 == 준비
 
-윈도우 터미널 창에서 `wsl` 명령어를 수행하여 리눅스 환경으로 들어갑니다.
+Visual Studio에서 Terminal > New Terminal을 선택하여 명령창을 실행합니다. 실행된 상태라면 해당 Terminal에서 진행하면 됩니다.
 
 == 컨테이너 검사
 
@@ -24,7 +24,7 @@ Skopeo를 사용하면 로컬로 컨테이너를 다운로드하지 않고도 �
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-skopeo inspect docker://quay.io/rhdevelopers/quarkus-demo:v1
+sudo skopeo inspect docker://quay.io/rhdevelopers/quarkus-demo:v1
 ----
 
 [.console-output]
@@ -120,7 +120,7 @@ Skopeo를 사용하면 Docker 호스트 없이도 하나의 컨테이너 레지�
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-skopeo copy docker://quay.io/rhdevelopers/quarkus-demo:v1 dir:./quakurs-demo-skopeo
+sudo skopeo copy docker://quay.io/rhdevelopers/quarkus-demo:v1 dir:./quakurs-demo-skopeo
 ----
 
 [.console-output]
@@ -170,7 +170,7 @@ drwxr-xr-x  25 asotobu  staff   800B Apr 11 16:36 ..
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-skopeo copy docker://quay.io/rhdevelopers/quarkus-demo:v1 docker-daemon:docker.io/rhdevelopers/quarkus-demo:skopeo
+sudo skopeo copy docker://quay.io/rhdevelopers/quarkus-demo:v1 docker-daemon:docker.io/rhdevelopers/quarkus-demo:skopeo
 ----
 
 [.console-output]
@@ -222,7 +222,7 @@ podman run -ti -p 5000:5000 --restart=always --name registry registry:2
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-skopeo copy docker://quay.io/rhdevelopers/quarkus-demo:v1 docker://localhost:5000/rhdevelopers/quarkus-demo:skopeo --dest-tls-verify=false
+sudo skopeo copy docker://quay.io/rhdevelopers/quarkus-demo:v1 docker://localhost:5000/rhdevelopers/quarkus-demo:skopeo --dest-tls-verify=false
 ----
 
 [.console-output]
@@ -261,5 +261,5 @@ Skopeo는 Docker 호스트가 없어도 저장소에서 컨테이너를 삭제�
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-skopeo delete docker://<repository>/imagename:latest
+sudo  skopeo delete docker://<repository>/imagename:latest
 ----
