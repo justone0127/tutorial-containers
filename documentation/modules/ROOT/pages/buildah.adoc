@@ -18,8 +18,8 @@ Visual Studio 환경 및 Terminal 창에서 작업할 수 있습니다.
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-[student@rhel9 tutorial-app]$ cd 
-[student@rhel9 ~]$ vi Containerfile
+cd 
+vi Containerfile
 ----
 
 [.console-input]
