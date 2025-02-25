@@ -206,7 +206,7 @@ docker.io/rhdevelopers/quarkus-demo                 skopeo      e40635aea714  4 
 == 레지스트리 간 복사
 
 레지스트리 간에 컨테이너 이미지를 복사하려면 `docker` 접두사를 사용해야 합니다.
-우선 wsl 환경에서 컨테이너 레지스트리를 시작해 보겠습니다.
+우선 Visual Studio의 Terminal 환경에서 컨테이너 레지스트리를 시작해 보겠습니다.
 
 터미널 창에서 다음 명령을 실행합니다. (이미지 레지스트리 기동)
 
@@ -217,7 +217,7 @@ podman run -ti -p 5000:5000 --restart=always --name registry registry:2
 ----
 
 Visual Studio 화면에서 상단의 Terminal > New Terminal을 선택하여 새로운 터미널 창을 열고 명령어를 실행합니다.
-
+image::skopeo-terminal.png[alt="New Terminal", align="center"]
 
 다음처럼 `skopeo copy` 명령을 실행할 때, origin을 *quay.io* 로 설정하고 destination은 위 단계에서 만든 레지스트리로 설정합니다.
 
