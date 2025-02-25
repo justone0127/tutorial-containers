@@ -47,6 +47,10 @@ image::pd-5.png[alt="Podman Desktop Container Run button", align="center"]
 
 image::pd-6.png[alt="Podman Desktop Container Run details", align="center"]
 
+VNC 웹 브라우저에서 Activities를 선택하고, 하단에 Firefox 브라우저를 실행합니다.
+
+image::podman-desktop-firefox.png[alt="Podman Desktop Firefox", align="center"]
+
 좋습니다. 이제 컨테이너를 시작했으므로 브라우저에서 `http://localhost:9000` 주소를 방문하거나 터미널에서 curl 명령을 실행하여 Podman Desktop에 노출된 9000 번 포트에 액세스할 수 있습니다.
 
 image::podman-desktop-nginx.png[alt="Podman Desktop running nginx", align="center"]
