@@ -90,6 +90,7 @@ metadata:
   labels:
     app: web-db-app
 spec:
+  serviceAccountName: web-db-sa
   containers:
   - name: nginx-container
     image: nginx:latest
