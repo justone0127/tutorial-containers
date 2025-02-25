@@ -71,8 +71,7 @@ registry.access.redhat.com/ubi9/openjdk-21-runtime 1.18-4        80786be7434f   
 데스크톱 인터페이스에서 이미지 관리를 살펴보겠습니다.
 
 
-Podman Desktop::
-
+Podman Desktop:
 
 VNC 웹 브라우저를 통해 RHEL 9 GUI 환경에서 Activities를 선택하고, 하단의 주사위 모양의 아이콘을 누르면, 현재 OS에 설치되어 있는 프로그램이 보입니다. 이 중에서 *Podman Desktop* 프로그램을 선택하여 실행합니다.
 
