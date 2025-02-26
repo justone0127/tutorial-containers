@@ -115,7 +115,7 @@ image::pd-7.png[alt="Podman Desktop Pod YAML VSCode", align="center"]
 
 image::pd-8.png[alt="Podman Desktop Pod Create 1", align="center"]
 
-image::pd-9-1.png[alt="Podman Desktop Pod Create 2", align="center"]
+image::pd-9-1-1.png[alt="Podman Desktop Pod Create 2", align="center"]
 
 OpenShift 클러스터에 Pod가 생성되면 `Pod` 탭을 클릭하여 Pod와 컨테이너를 볼 수 있습니다. Pod 이름을 클릭하면 Pod 로그와 컨테이너 세부 정보를 볼 수 있습니다.
 
