@@ -51,7 +51,7 @@ a8172ead99eece385fa756e85948656896645f7f1848c68dfe498da9d93be073
 [.console-input]
 [source,bash,subs="+macros,+attributes"]
 ----
-podman image list
+podman image 
 ----
 
 최소한 다음 두 가지 출력이 표시됩니다.
